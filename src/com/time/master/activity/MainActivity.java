@@ -34,7 +34,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		SystemPrompt pageFragment = new SystemPrompt();
 		fragmentTransaction.add(R.id.mainlayout, pageFragment);
 		fragmentTransaction.commit();
-		
+
 	}
 
 	// public void showPopupWindow(Context context, View view) {
@@ -61,10 +61,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		
+
 
 	}
-	
+
     public void showNext(Fragment fragment , int id) {
 		FragmentManager fragmentManager = this.getSupportFragmentManager();
 		FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -73,5 +73,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		fragmentTransaction.addToBackStack(null);
 		fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 		fragmentTransaction.commit();
+		// hihi
 	}
 }
